@@ -34,7 +34,7 @@ export const Projects = () => {
                                     </Typography>
                                     
                                     <Typography variant="body1" sx={{ mt: 3 }}>
-                                        Techonologies:
+                                        Technologies:
                                     </Typography>
                                     <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexFlow: 'wrap', gap: '20px', mt: 2, flex: '1 1 auto' }}>
                                         {
