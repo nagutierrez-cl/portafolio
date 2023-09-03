@@ -8,10 +8,6 @@ export const skills = [
         img: '/css.png'
     },
     {
-        label: 'Sass',
-        img: '/sass.png'
-    },
-    {
         label: 'Javascript',
         img: '/javascript.png'
     },
@@ -30,6 +26,14 @@ export const skills = [
     {
         label: 'NextJs',
         img: '/next.svg'
+    },
+    {
+        label: 'VueJs',
+        img: '/vue.png'
+    },
+    {
+        label: 'Pinia',
+        img: '/pinia.svg'
     },
     {
         label: 'Bootstrap',
@@ -56,6 +60,14 @@ export const skills = [
         img: '/express.svg'
     },
     {
+        label: 'Php',
+        img: '/php.png'
+    },
+    {
+        label: 'Laravel',
+        img: '/laravel.png'
+    },
+    {
         label: 'SQL',
         img: '/mysql.svg'
     },
@@ -77,17 +89,6 @@ export const skills = [
     }
 ]
 
-export const services = [
-    {
-        label: 'AWS Amplify',
-        img: '/amplify.png'
-    },
-    {
-        label: 'Vercel',
-        img: '/vercel.png'
-    }
-]
-
 export const projects = [
     {
         img: '/PokemonApp.png',
@@ -100,7 +101,7 @@ export const projects = [
     {
         img: '/calendar.png',
         title: 'MERN Calendar App',
-        description: 'Calendar app made in a ReactJs course as a final project to consolidate all the knowledge learnt in ReactJs, NodeJs, ExpressJs and MongoDB. Currently working on a trial version, got shut down with the removal of heroku free plan.',
+        description: 'Calendar app made in a ReactJs course as a final project to consolidate all the knowledge learnt in ReactJs, NodeJs, ExpressJs and MongoDB. Demo got shut down with the removal of heroku free plan.',
         technologies: ['ReactJs', 'Redux', 'Bootstrap', 'NodeJs', 'Express', 'MongoDB'],
         github: 'https://github.com/nagutierrez-cl/calendar',
         url: '',

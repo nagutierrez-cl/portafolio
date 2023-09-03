@@ -62,7 +62,7 @@ export const HRModal = ({ isModalOpen, setIsModalOpen }) => {
                         <Typography>The company preferred the implementation of a local server, which was configured by the IT Manager</Typography>
                     </Box>
 
-                    <Box sx={{ display: 'flex', justifyContent: 'end', mt: 4 }}>
+                    <Box sx={{ display: 'flex', justifyContent: 'end', mt: 6 }}>
                         <Button variant='outlined' onClick={() => setIsModalOpen(false)}>Close Modal</Button>
                     </Box>
                 </Container>

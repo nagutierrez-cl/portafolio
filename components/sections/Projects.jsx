@@ -19,24 +19,24 @@ export const Projects = () => {
                 {
                     projects.map(project => (
                         <Grid item xs={12} sm={6} md={4} key={project.title}>
-                            <Card sx={{ height: '100%' }}>
+                            <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
                                 <CardMedia
                                     sx={{ height: 175, backgroundSize: 'contain' }}
                                     image={project.img}
                                     title={project.title}
                                 />
-                                <CardContent sx={{ display: 'flex', flexDirection: 'column', height: 'calc(100% - 240px)' }}>
+                                <CardContent sx={{ display: 'flex', flexDirection: 'column', flex: 1 }}>
                                     <Typography gutterBottom variant="h5" component="div">
                                         {project.title}
                                     </Typography>
-                                    <Typography variant="body2" color="text.secondary" sx={{ minHeight: '140px'}}>
+                                    <Typography variant="body2" color="text.secondary" sx={{ flex: 1 }}>
                                         {project.description}
                                     </Typography>
                                     
                                     <Typography variant="body1" sx={{ mt: 3 }}>
                                         Technologies:
                                     </Typography>
-                                    <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexFlow: 'wrap', gap: '20px', mt: 2, flex: '1 1 auto' }}>
+                                    <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexFlow: 'wrap', gap: '20px', mt: 2 }}>
                                         {
                                             project.technologies.map(tech => (
                                                 <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '5px', width: '80px' }} key={`${project.title}-${tech}`}>
@@ -58,7 +58,7 @@ export const Projects = () => {
                                                 : 
                                                     <>
                                                         <Button variant="outlined" startIcon={<GitHubIcon />} href={project.github} target='_blank' disabled={!project.github}>Github</Button>
-                                                        <Button variant="outlined" startIcon={<LaunchIcon />} href={project.url} target='_blank' disabled={!project.url}>Trial</Button>
+                                                        <Button variant="outlined" startIcon={<LaunchIcon />} href={project.url} target='_blank' disabled={!project.url}>Demo</Button>
                                                     </>
                                         }
                                     </Box>

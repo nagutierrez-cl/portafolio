@@ -7,7 +7,7 @@ export const Footer = () => {
 
             <hr />
 
-            <Box sx={{ display: { xs: 'none', sm: 'flex' }, justifyContent: 'space-between', alignItems: 'center', mt: 3, mb: 2 }}>
+            <Box sx={{ display: { xs: 'none', sm: 'flex' }, justifyContent: 'space-between', alignItems: 'center', mt: 3, pb: 2 }}>
                 <img src='/logow.png' height='50' />
                 <Typography sx={{ fontSize: '14px' }}>Copyright © 2023 - Nicolás Gutiérrez</Typography>
                 <SocialIcons />

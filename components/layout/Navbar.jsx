@@ -16,7 +16,7 @@ export const Navbar = () => {
 
     return (
         <HideOnScroll>
-            <AppBar sx={{ backgroundColor: 'black' }}>
+            <AppBar sx={{ backgroundColor: '#0d0f12' }}>
                 <Container maxWidth="xl">
                     <Toolbar disableGutters>
 

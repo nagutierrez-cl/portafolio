@@ -10,8 +10,8 @@ export const Skills = () => {
             <Grid container spacing={5} justifyContent='center'>
                 {
                     skills.map(skill => (
-                        <Grid item xs={6} sm={4} md={3} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }} key={skill.label}>
-                            <Box sx={{ height: { xs: '60px', sm: '80px' }}}>
+                        <Grid item xs={4} sm={3} md={2} lg={2} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }} key={skill.label}>
+                            <Box sx={{ height: { xs: '45px', sm: '60px' }}}>
                                 <img src={skill.img} height='100%' />
                             </Box>
                             <Typography variant="body2" sx={{ mt: 1 }}>{skill.label}</Typography>
