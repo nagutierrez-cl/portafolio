@@ -14,7 +14,7 @@ export const Footer = () => {
             </Box>
 
             {/* Responsive */}
-            <Box sx={{ display: { xs: 'flex', sm: 'none' }, flexDirection: 'column', my: 3, gap: 3 }}>
+            <Box sx={{ display: { xs: 'flex', sm: 'none' }, flexDirection: 'column', py: 3, gap: 3 }}>
                 <Box sx={{ display: 'flex', justifyContent: 'space-between', flex: 1 }}>
                     <img src='/logow.png' height='50' />
                     <SocialIcons />
