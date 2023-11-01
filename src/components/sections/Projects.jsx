@@ -2,39 +2,41 @@ import { Box, Button, Card, CardActions, CardContent, CardMedia, Grid, Typograph
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LaunchIcon from '@mui/icons-material/Launch';
 import InfoIcon from '@mui/icons-material/Info';
+import { useTranslation } from 'react-i18next';
 
-import { projects, skills } from '../../data'
+import { projects, skills } from '../../../data'
 import { SectionTitle } from '../SectionTitle';
 import { useState } from 'react';
 import { HRModal } from '../HRModal';
 
 export const Projects = () => {
 
+    const { t, i18n } = useTranslation();
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     return (
         <Box id='projects' sx={{ my: 20 }}>
-            <SectionTitle title='Projects' />
+            <SectionTitle title={t('Projects')} />
             <Grid container spacing={{ xs: 4, lg: 8 }} justifyContent='center'>
                 {
                     projects.map(project => (
-                        <Grid item xs={12} sm={6} md={4} key={project.title}>
+                        <Grid item xs={12} sm={6} md={4} key={project.title[i18n.language]}>
                             <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
                                 <CardMedia
                                     sx={{ height: 175, backgroundSize: 'contain' }}
                                     image={project.img}
-                                    title={project.title}
+                                    title={project.title[i18n.language]}
                                 />
                                 <CardContent sx={{ display: 'flex', flexDirection: 'column', flex: 1 }}>
                                     <Typography gutterBottom variant="h5" component="div">
-                                        {project.title}
+                                        {project.title[i18n.language]}
                                     </Typography>
                                     <Typography variant="body2" color="text.secondary" sx={{ flex: 1 }}>
-                                        {project.description}
+                                        {project.description[i18n.language]}
                                     </Typography>
                                     
                                     <Typography variant="body1" sx={{ mt: 3 }}>
-                                        Technologies:
+                                        {t('Technologies')}:
                                     </Typography>
                                     <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexFlow: 'wrap', gap: '20px', mt: 2 }}>
                                         {
@@ -53,8 +55,8 @@ export const Projects = () => {
                                 <CardActions>
                                     <Box sx={{ display: 'flex', justifyContent: 'space-around', flex: 1, mb: 2 }}>
                                         {
-                                            project.title === 'Freelance HR App' 
-                                                ?   <Button variant='outlined' startIcon={<InfoIcon />} onClick={() => setIsModalOpen(true)}>More info</Button>
+                                            project.modal
+                                                ?   <Button variant='outlined' startIcon={<InfoIcon />} onClick={() => setIsModalOpen(true)}>{t('More info')}</Button>
                                                 : 
                                                     <>
                                                         <Button variant="outlined" startIcon={<GitHubIcon />} href={project.github} target='_blank' disabled={!project.github}>Github</Button>

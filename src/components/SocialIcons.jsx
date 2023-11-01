@@ -4,7 +4,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 export const SocialIcons = () => {
   return (
-    <Box display='flex' gap={2} alignItems='center'>
+    <Box display='flex' gap={1} alignItems='center'>
         <Link href="https://www.linkedin.com/in/nagutierrez-cl/" target='_blank'>
             <IconButton>
                 <LinkedInIcon sx={{ color: 'white', fontSize: '2rem' }} />

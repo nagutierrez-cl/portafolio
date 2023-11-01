@@ -32,8 +32,7 @@ export const darkTheme = createTheme({
 
         MuiTypography: {
             defaultProps: {
-                color: 'primary',
-                textAlign: 'justify'
+                color: 'primary'
             },
             styleOverrides: {
                 h1: {

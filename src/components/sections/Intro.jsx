@@ -1,20 +1,24 @@
 import { Box, Button, Container, IconButton , Link, Typography } from "@mui/material"
+import { useTranslation } from "react-i18next";
 import { SocialIcons } from "../SocialIcons";
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 
 export const Intro = () => {
+
+  const { t } = useTranslation();
+
   return (
     <Container maxWidth='md' sx={{ height: '100vh', display: 'flex',  justifyContent: 'center', flexDirection: 'column', gap: '5px' }}>
-        <Typography variant="h4" sx={{ fontSize: { xs: '1.5rem', sm: '2.5rem'}}}>Hi, nice to meet you, I'm</Typography>
+        <Typography variant="h2" sx={{ fontSize: { xs: '1.5rem', sm: '2.5rem'}}}>{t('Welcome')}</Typography>
         <Typography variant="h1" sx={{ fontSize: { xs: '2.5rem', sm: '4rem'}, color: '#279EFF' }}>Nicolás Gutiérrez</Typography>
         <Typography className="typewriter" variant="h5">Full-Stack web developer</Typography>
 
 
-        <Box display='flex' gap={3} sx={{ flexDirection: { xs: 'column', sm: 'row' }, alignItems: { xs: 'start', sm: 'center' } }}>
+        <Box display='flex' gap={2} sx={{ flexDirection: { xs: 'column', sm: 'row' }, alignItems: { xs: 'start', sm: 'center' } }}>
           <SocialIcons />
 
           <Box>
-            <Link href='/CV/EN-NicolasGutierrez.pdf' target='_blank' sx={{ mr: 3 }}>
+            <Link href='/CV/EN-NicolasGutierrez.pdf' target='_blank' sx={{ mr: 2 }}>
                 <Button variant="outlined">
                     CV - EN
                 </Button>
@@ -28,7 +32,7 @@ export const Intro = () => {
           </Box>
         </Box>
         
-        <Box sx={{ position: 'relative', top: '10%', display: 'flex', justifyContent: 'center' }}>
+        <Box sx={{ position: 'relative', top: '15%', display: 'flex', justifyContent: 'center' }}>
           <IconButton className="animation-float"  href="/#about">
             <KeyboardDoubleArrowDownIcon sx={{ fontSize: '3rem' }}  />
           </IconButton>

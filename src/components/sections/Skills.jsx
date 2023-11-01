@@ -1,12 +1,16 @@
 import { Box, Grid, Typography } from "@mui/material"
+import { useTranslation } from "react-i18next"
 
-import { skills } from "../../data"
+import { skills } from "../../../data"
 import { SectionTitle } from "../SectionTitle"
 
 export const Skills = () => {
+
+    const { t } = useTranslation();
+
     return (
         <Box id='skills' sx={{ my: 20 }}>
-            <SectionTitle title='Skills' />
+            <SectionTitle title={t('Skills')} />
             <Grid container spacing={5} justifyContent='center'>
                 {
                     skills.map(skill => (
