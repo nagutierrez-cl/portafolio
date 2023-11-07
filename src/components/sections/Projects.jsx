@@ -15,7 +15,7 @@ export const Projects = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     return (
-        <Box id='projects' sx={{ my: 20 }}>
+        <Box id='projects' sx={{ mt: 40, mb: 30 }}>
             <SectionTitle title={t('Projects')} />
             <Grid container spacing={{ xs: 4, lg: 8 }} justifyContent='center'>
                 {

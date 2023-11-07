@@ -7,7 +7,7 @@ export const About = () => {
     const { t } = useTranslation();
 
     return (
-        <Box id='about' sx={{ my: 20 }}>
+        <Box id='about' sx={{ mt: 20, mb: 40 }}>
             <SectionTitle title={t('About Me')} />
             
             <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: { xs: 5, md: 10 }, flexDirection: { xs: 'column', md: 'row' }, maxWidth: 'md', margin: 'auto' }}>

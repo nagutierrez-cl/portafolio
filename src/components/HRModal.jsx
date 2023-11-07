@@ -41,7 +41,7 @@ export const HRModal = ({ isModalOpen, setIsModalOpen }) => {
 
                         <Typography>Then the main screen is displayed, which includes a paginated table with all the employees entries including text fields to be able to filter. There's a previous filter according to the type of user logged in. Workers qualified as unwanted are highlighted in red.</Typography>
                         <Typography>The information presented below is fictitious.</Typography>
-                        <img src='/HR/home.png' className="modal-img" />
+                        <img src='/projects/HHRR.png' className="modal-img" />
 
                         <Typography>Double-clicking on a record opens a Modal (react-modal) with a form with the employee's information.</Typography>
                         <img src='/HR/modal.png' className="modal-img" />

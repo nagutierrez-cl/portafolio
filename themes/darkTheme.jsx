@@ -44,7 +44,7 @@ export const darkTheme = createTheme({
                     fontWeight: 400
                 },
                 body1: {
-                    fontSize: '1.3rem',
+                    fontSize: '1.2rem',
                     opacity: .8
                 },
                 body2: {

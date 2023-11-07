@@ -35,7 +35,7 @@ html {
   50%  { transform: translate(0, 15px); }
 }
 
-.typewriter {
+.typewriter_en {
   color: white;
   margin: 0;
   width: 20.5ch;
@@ -44,16 +44,38 @@ html {
   white-space: nowrap;
   /* letter-spacing: .05em; */
   animation: 
-    typing 2.5s steps(40, end),
+    typing_en 2.5s steps(40, end),
     blink 1.5s step-end infinite;
 }
 
-@keyframes typing {
+@keyframes typing_en {
   from { width: 0 }
   to { width: 20.5ch }
+}
+
+.typewriter_es {
+  color: white;
+  margin: 0;
+  width: 23.5ch;
+  overflow: hidden; 
+  border-right: 3px solid white;
+  white-space: nowrap;
+  /* letter-spacing: .05em; */
+  animation: 
+    typing_es 2.5s steps(40, end),
+    blink 1.5s step-end infinite;
+}
+
+@keyframes typing_es {
+  from { width: 0 }
+  to { width: 23.5ch }
 }
 
 @keyframes blink {
   from, to { border-color: transparent }
   50% { border-color: white; }
+}
+
+.select_lang .MuiOutlinedInput-notchedOutline{
+  border: none
 }

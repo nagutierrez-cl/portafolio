@@ -5,14 +5,14 @@ import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrow
 
 export const Intro = () => {
 
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  // i18n.language
 
   return (
     <Container maxWidth='md' sx={{ height: '100vh', display: 'flex',  justifyContent: 'center', flexDirection: 'column', gap: '5px' }}>
         <Typography variant="h2" sx={{ fontSize: { xs: '1.5rem', sm: '2.5rem'}}}>{t('Welcome')}</Typography>
         <Typography variant="h1" sx={{ fontSize: { xs: '2.5rem', sm: '4rem'}, color: '#279EFF' }}>Nicolás Gutiérrez</Typography>
-        <Typography className="typewriter" variant="h5">Full-Stack web developer</Typography>
-
+        <Typography className={`typewriter_${i18n.language}`} variant="h5">{t('position')}</Typography>
 
         <Box display='flex' gap={2} sx={{ flexDirection: { xs: 'column', sm: 'row' }, alignItems: { xs: 'start', sm: 'center' } }}>
           <SocialIcons />

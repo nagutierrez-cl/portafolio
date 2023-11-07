@@ -1,97 +1,97 @@
 export const skills = [
     {
         label: 'Html',
-        img: '/html.png'
+        img: '/skills/html.png'
     },
     {
         label: 'Css',
-        img: '/css.png'
+        img: '/skills/css.png'
     },
     {
         label: 'Javascript',
-        img: '/javascript.png'
+        img: '/skills/javascript.png'
     },
     {
         label: 'Typescript',
-        img: '/typescript.svg'
+        img: '/skills/typescript.svg'
     },
     {
         label: 'ReactJs',
-        img: '/react.png'
+        img: '/skills/react.png'
     },
     {
         label: 'Redux',
-        img: '/redux.png'
+        img: '/skills/redux.png'
     },
     {
         label: 'NextJs',
-        img: '/next.svg'
+        img: '/skills/next.svg'
     },
     {
         label: 'VueJs',
-        img: '/vue.png'
+        img: '/skills/vue.png'
     },
     {
         label: 'Pinia',
-        img: '/pinia.svg'
+        img: '/skills/pinia.svg'
     },
     {
         label: 'Bootstrap',
-        img: '/bootstrap.png'
+        img: '/skills/bootstrap.png'
     },
     {
         label: 'Material UI',
-        img: '/material-ui.png'
+        img: '/skills/material-ui.png'
     },
     {
         label: 'Ant Design',
-        img: '/antd.svg'
+        img: '/skills/antd.svg'
     },
     {
         label: 'ChartJs',
-        img: '/chartjs.png'
+        img: '/skills/chartjs.png'
     },
     {
         label: 'NodeJs',
-        img: '/node.png'
+        img: '/skills/node.png'
     },
     {
         label: 'Express',
-        img: '/express.svg'
+        img: '/skills/express.svg'
     },
     {
         label: 'Php',
-        img: '/php.png'
+        img: '/skills/php.png'
     },
     {
         label: 'Laravel',
-        img: '/laravel.png'
+        img: '/skills/laravel.png'
     },
     {
         label: 'SQL',
-        img: '/mysql.svg'
+        img: '/skills/mysql.svg'
     },
     {
         label: 'MongoDB',
-        img: '/mongo.svg'
+        img: '/skills/mongo.svg'
     },
     {
         label: 'Git',
-        img: '/git.png'
+        img: '/skills/git.png'
     },
     {
         label: 'Github',
-        img: '/github.png'
+        img: '/skills/github.png'
     },
     {
         label: 'Postman',
-        img: '/postman.png'
+        img: '/skills/postman.png'
     }
 ]
 
 export const projects = [
     {
-        img: '/PokemonApp.png',
+        img: '/projects/PokemonApp.png',
         title: {
             en: 'Pokemon App',
             es: 'App Pokemón'
@@ -105,7 +105,7 @@ export const projects = [
         url: 'https://pokemon-nagutierrez-cl.vercel.app',
     },
     {
-        img: '/calendar.png',
+        img: '/projects/calendar.png',
         title: {
             en: 'MERN Calendar App',
             es: 'Calendario MERN'
@@ -119,7 +119,7 @@ export const projects = [
         url: '',
     },
     {
-        img: '/HR/home.png',
+        img: '/projects/HHRR.png',
         title: {
             en: 'Freelance HR App',
             es: 'App RRHH Frelance',
