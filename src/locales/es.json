@@ -1,12 +1,13 @@
 {
     "translation": {
-        "Welcome": "Hola, bienvenido, soy",
+        "welcome_message": "Hola, bienvenido, soy",
         "position": "Desarrollador web Full-Stack",
-        "About Me": "Sobre mí",
-        "About": "2 años como desarrollador Full-Stack remoto.\n Capaz de tomar requerimientos y ofrecer posibles soluciones al cliente. Abierto a nuevas ideas para desarrollar una funcionalidad. Aprecio el feedback y lo tomo en consideración.\n\n Estoy listo para darte lo mejor de mí. \n Desde Punta Arenas, Chile.",
-        "Skills": "Tecnologías",
-        "Projects": "Proyectos",
-        "Technologies": "Tecnologías",
-        "More info": "Más información"
+        "about": "Sobre mí",
+        "about_me": "Sobre mí",
+        "about_text": "2 años como desarrollador Full-Stack remoto.\n Capaz de tomar requerimientos y ofrecer posibles soluciones al cliente. Abierto a nuevas ideas para desarrollar una funcionalidad. Aprecio el feedback y lo tomo en consideración.\n\n Estoy listo para darte lo mejor de mí. \n Desde Punta Arenas, Chile.",
+        "skills": "Tecnologías",
+        "projects": "Proyectos",
+        "technologies": "Tecnologías",
+        "more info": "Más información"
     }
 }

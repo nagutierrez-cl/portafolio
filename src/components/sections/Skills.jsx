@@ -9,8 +9,8 @@ export const Skills = () => {
     const { t } = useTranslation();
 
     return (
-        <Box id='skills' sx={{ my: 40 }}>
-            <SectionTitle title={t('Skills')} />
+        <Box id='skills' sx={{ mb: 25 }}>
+            <SectionTitle title={t('skills')} />
             <Grid container spacing={5} justifyContent='center'>
                 {
                     skills.map(skill => (

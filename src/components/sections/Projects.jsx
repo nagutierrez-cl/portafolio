@@ -15,8 +15,8 @@ export const Projects = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     return (
-        <Box id='projects' sx={{ mt: 40, mb: 30 }}>
-            <SectionTitle title={t('Projects')} />
+        <Box id='projects' sx={{ mb: 25 }}>
+            <SectionTitle title={t('projects')} />
             <Grid container spacing={{ xs: 4, lg: 8 }} justifyContent='center'>
                 {
                     projects.map(project => (
@@ -36,7 +36,7 @@ export const Projects = () => {
                                     </Typography>
                                     
                                     <Typography variant="body1" sx={{ mt: 3 }}>
-                                        {t('Technologies')}:
+                                        {t('technologies')}:
                                     </Typography>
                                     <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexFlow: 'wrap', gap: '20px', mt: 2 }}>
                                         {
@@ -56,7 +56,7 @@ export const Projects = () => {
                                     <Box sx={{ display: 'flex', justifyContent: 'space-around', flex: 1, mb: 2 }}>
                                         {
                                             project.modal
-                                                ?   <Button variant='outlined' startIcon={<InfoIcon />} onClick={() => setIsModalOpen(true)}>{t('More info')}</Button>
+                                                ?   <Button variant='outlined' startIcon={<InfoIcon />} onClick={() => setIsModalOpen(true)}>{t('more info')}</Button>
                                                 : 
                                                     <>
                                                         <Button variant="outlined" startIcon={<GitHubIcon />} href={project.github} target='_blank' disabled={!project.github}>Github</Button>

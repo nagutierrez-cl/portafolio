@@ -37,25 +37,25 @@ export const HRModal = ({ isModalOpen, setIsModalOpen }) => {
                     <Box display='flex' flexDirection='column' sx={{ gap: 4 }}>
                         <Typography variant='body1'>First of all there's a login page, which is automatically skipped if the user was previously logged in and has a valid token. There's 3 different roles: HR user, Risk Prevention user and Supervisor user.</Typography>
                         <Typography variant='body1'>HR are the only one who can add new entries and delete, RP are the ones who fill the exams and certifications for some tools, Supervisor can only read general info for possible hirings.</Typography>
-                        <img src='/HR/login.png' className="modal-img" />
+                        <img src='/HR/login.webp' className="modal-img" />
 
                         <Typography>Then the main screen is displayed, which includes a paginated table with all the employees entries including text fields to be able to filter. There's a previous filter according to the type of user logged in. Workers qualified as unwanted are highlighted in red.</Typography>
                         <Typography>The information presented below is fictitious.</Typography>
-                        <img src='/projects/HHRR.png' className="modal-img" />
+                        <img src='/projects/HHRR.webp' className="modal-img" />
 
                         <Typography>Double-clicking on a record opens a Modal (react-modal) with a form with the employee's information.</Typography>
-                        <img src='/HR/modal.png' className="modal-img" />
+                        <img src='/HR/modal.webp' className="modal-img" />
 
                         <Typography>At the bottom of the modal, there is a more information section, in which there is a select that renders conditionally another components based on the chosen option. Some examples:</Typography>
 
                         <Box>
                             <Typography variant="body2">Academic information</Typography>
-                            <img src='/HR/academico.png' className="modal-img" />
+                            <img src='/HR/academico.webp' className="modal-img" />
                         </Box>
 
                         <Box>
                             <Typography variant="body2">Authorized Tools</Typography>
-                            <img src='/HR/herramientas.png' className="modal-img" />
+                            <img src='/HR/herramientas.webp' className="modal-img" />
                         </Box>
                         
                         <Typography>Where each one has information related to the selected option. There's an option to upload a file to each record if that's necessary, such as a certificate or anything related.</Typography>
