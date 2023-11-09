@@ -22,11 +22,11 @@ export const Intro = () => {
                     </Button>
                 </Link>
 
-                {/* <Link href='/CV/EN-NicolasGutierrez.pdf' target='_blank'> */}
-                    <Button variant="outlined" disabled>
+                <Link href='/CV/EN-NicolasGutierrez.pdf' target='_blank'>
+                    <Button variant="outlined">
                         CV - EN
                     </Button>
-                {/* </Link> */}
+                </Link>
             </Box>
             
             <Box sx={{ position: 'relative', top: '15%', display: 'flex', justifyContent: 'center' }}>
