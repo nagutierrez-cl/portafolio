@@ -31,7 +31,7 @@ export const Navbar = () => {
                 <Container maxWidth="xl">
                     <Toolbar disableGutters>
 
-                        <img src='/logow.png' height='50' />
+                        <img src='/logow.svg' height='50' />
                     
                         <Box sx={{ flex: 1, display: 'flex', justifyContent: 'flex-end', gap: 3 }}>
 
