@@ -35,17 +35,6 @@ export const Navbar = () => {
                     
                         <Box sx={{ flex: 1, display: 'flex', justifyContent: 'flex-end', gap: 3 }}>
 
-                            <Select
-                                className="select_lang"
-                                value={lang}
-                                onChange={changeLang}
-                                autoWidth
-                                sx={{ border: 'none' }}
-                            >
-                                <MenuItem value="en"><img src="/locales/en.webp" width="25px" /></MenuItem>
-                                <MenuItem value="es"><img src="/locales/es.webp" width="25px" /></MenuItem>
-                            </Select>
-
                             <Box sx={{ display:{ xs: 'none', sm: 'flex' } }}>
                                 {
                                     sections.map((section) => (
@@ -59,6 +48,18 @@ export const Navbar = () => {
                                     ))
                                 }
                             </Box>
+
+                            <Select
+                                className="select_lang"
+                                value={lang}
+                                onChange={changeLang}
+                                autoWidth
+                                sx={{ border: 'none' }}
+                            >
+                                <MenuItem value="en"><img src="/locales/en.webp" width="25px" /></MenuItem>
+                                <MenuItem value="es"><img src="/locales/es.webp" width="25px" /></MenuItem>
+                            </Select>
+                            
                         </Box>
 
                     </Toolbar>
