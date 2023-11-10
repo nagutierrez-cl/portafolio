@@ -42,8 +42,8 @@ export const Navbar = () => {
                                 autoWidth
                                 sx={{ border: 'none' }}
                             >
-                                <MenuItem value="es"><img src="/locales/es.webp" width="25px" /></MenuItem>
                                 <MenuItem value="en"><img src="/locales/en.webp" width="25px" /></MenuItem>
+                                <MenuItem value="es"><img src="/locales/es.webp" width="25px" /></MenuItem>
                             </Select>
 
                             <Box sx={{ display:{ xs: 'none', sm: 'flex' } }}>

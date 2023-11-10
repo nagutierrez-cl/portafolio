@@ -1,7 +1,10 @@
 import { Box, Button, Container, Fade, IconButton, Modal, Typography } from "@mui/material"
 import CloseIcon from '@mui/icons-material/Close';
+import { useTranslation } from "react-i18next";
 
 export const HRModal = ({ isModalOpen, setIsModalOpen }) => {
+
+    const { t } = useTranslation();
 
     return (
         <Modal
@@ -32,38 +35,38 @@ export const HRModal = ({ isModalOpen, setIsModalOpen }) => {
                     </Box>
                     <hr/>
 
-                    <Typography sx={{ mb: 5, opacity: 1 }}>Web app developed in MERN stack, using Redux for state management, login based on jsonwebtoken and file upload with multer. Styling with Css and Bootstrap 4. As it is Software with confidential information of a company, images will be presented instead of the code or a trial version.</Typography>
+                    <Typography sx={{ mb: 5, opacity: 1 }}>{ t('hhrr.intro' )}</Typography>
                 
                     <Box display='flex' flexDirection='column' sx={{ gap: 4 }}>
-                        <Typography variant='body1'>First of all there's a login page, which is automatically skipped if the user was previously logged in and has a valid token. There's 3 different roles: HR user, Risk Prevention user and Supervisor user.</Typography>
-                        <Typography variant='body1'>HR are the only one who can add new entries and delete, RP are the ones who fill the exams and certifications for some tools, Supervisor can only read general info for possible hirings.</Typography>
+                        <Typography variant='body1'>{ t('hhrr.login') }</Typography>
+                        <Typography variant='body1'>{ t('hhrr.roles') }</Typography>
                         <img src='/HR/login.webp' className="modal-img" />
 
-                        <Typography>Then the main screen is displayed, which includes a paginated table with all the employees entries including text fields to be able to filter. There's a previous filter according to the type of user logged in. Workers qualified as unwanted are highlighted in red.</Typography>
-                        <Typography>The information presented below is fictitious.</Typography>
+                        <Typography>{ t('hhrr.home') }</Typography>
+                        <Typography>{ t('hhrr.disclaimer') }</Typography>
                         <img src='/projects/HHRR.webp' className="modal-img" />
 
-                        <Typography>Double-clicking on a record opens a Modal (react-modal) with a form with the employee's information.</Typography>
+                        <Typography>{ t('hhrr.modal_1' )}</Typography>
                         <img src='/HR/modal.webp' className="modal-img" />
 
-                        <Typography>At the bottom of the modal, there is a more information section, in which there is a select that renders conditionally another components based on the chosen option. Some examples:</Typography>
+                        <Typography>{ t('hhrr.modal_2' )}</Typography>
 
                         <Box>
-                            <Typography variant="body2">Academic information</Typography>
+                            <Typography variant="body2">{ t('hhrr.academic' )}</Typography>
                             <img src='/HR/academico.webp' className="modal-img" />
                         </Box>
 
                         <Box>
-                            <Typography variant="body2">Authorized Tools</Typography>
+                            <Typography variant="body2">{ t('hhrr.tools') }</Typography>
                             <img src='/HR/herramientas.webp' className="modal-img" />
                         </Box>
                         
-                        <Typography>Where each one has information related to the selected option. There's an option to upload a file to each record if that's necessary, such as a certificate or anything related.</Typography>
-                        <Typography>The company preferred the implementation of a local server, which was configured by the IT Manager</Typography>
+                        <Typography>{ t('hhrr.moreinfo') }</Typography>
+                        <Typography>{ t('hhrr.implementation') }</Typography>
                     </Box>
 
                     <Box sx={{ display: 'flex', justifyContent: 'end', mt: 6 }}>
-                        <Button variant='outlined' onClick={() => setIsModalOpen(false)}>Close Modal</Button>
+                        <Button variant='outlined' onClick={() => setIsModalOpen(false)}>{ t('hhrr.closemodal') }</Button>
                     </Box>
                 </Container>
             </Fade>

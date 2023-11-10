@@ -4,10 +4,24 @@
         "position": "Desarrollador web Full-Stack",
         "about": "Sobre mí",
         "about_me": "Sobre mí",
-        "about_text": "2 años como desarrollador Full-Stack remoto.\n Capaz de tomar requerimientos y ofrecer posibles soluciones al cliente. Abierto a nuevas ideas para desarrollar una funcionalidad. Aprecio el feedback y lo tomo en consideración.\n\n Estoy listo para darte lo mejor de mí. \n Desde Punta Arenas, Chile.",
+        "about_text": "+2 años de experiencia como desarrollador Front-end. \n +1 año de experiencia como desarrollador Full-stack. \n Capaz de tomar requerimientos y ofrecer posibles soluciones a las problemáticas del cliente. Abierto a nuevas ideas para desarrollar una funcionalidad. Aprecio el feedback y lo tomo en consideración.\n\n Estoy listo para darte lo mejor de mí. \n Desde Punta Arenas, Chile.",
         "skills": "Tecnologías",
         "projects": "Proyectos",
         "technologies": "Tecnologías",
-        "more info": "Más información"
+        "more info": "Más información",
+        "hhrr": {
+            "intro": "Aplicación web desarrollada en el stack MERN, utilizando Redux para los estados globales. Login basado en JsonWebToken y subida de archivos con multer. Estilos realizados con Css y Bootstrap 4. Al ser un Software con información confidencial de la empresa, imagenes de ejemplo serán presentadas en vez del código o una versión de prueba.",
+            "login": "Primero que todo, hay una página de inicio de sesión, la cual se salta automáticamente si el usuario tiene un token de sesión válido. Existen 3 roles dentro de la aplicación: Recursos humanos, Prevención de riesgos y Supervisor.",
+            "roles": "Recursos humanos son los únicos que pueden crear y eliminar registros. Prevención de riesgos se encarga de agregar la información de los exámenes médicos y autorizaciones internas para manejo de herramientas específicas. Supervisores solamente pueden leer la información general para posibles contrataciones.",
+            "home": "Luego, la página princial es renderizada, la cual incluye una tabla paginada con todos los registros de los empleados registrados, incluyendo campos de texto para poder filtrar según la necesidad. Hay un filtro previo realizado según el tipo de usuario. Personal calificado como no deseado se destaca en rojo.",
+            "disclaimer": "La información presentada a continuación es ficticia.",
+            "modal_1": "Haciendo doble click en un registro abre un modal, presentando un formulario con la información personal del empleado.",
+            "modal_2": "En la parte inferior del modal, hay una parte de más información, en donde hay un selector que renderiza condicionalmente otros componentes basado en la selección elegida. Algunos ejemplos:",
+            "academic": "Información academica",
+            "tools": "Herramientas autorizadas",
+            "moreinfo": "En donde cada una tiene información relacionada con la opción seleccionada. Existe la posibilidad de agregar un archivo a cada registro, en caso de ser necesario, tal como un certificado o algo relacionado.",
+            "implementation": "La empresa prefirió la implementación de un servidor local, el cual fué configurado en conjunto con el Encargado de TI.",
+            "closemodal": "Cerrar"
+        }
     }
 }
