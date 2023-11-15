@@ -9,7 +9,6 @@ export const Footer = () => {
 
             <Box sx={{ display: { xs: 'none', sm: 'flex' }, justifyContent: 'space-between', alignItems: 'center', mt: 3, pb: 2 }}>
                 <img src='/logow.svg' height='50' />
-                <Typography sx={{ fontSize: '14px' }}>Copyright © 2023 - Nicolás Gutiérrez</Typography>
                 <SocialIcons />
             </Box>
 
@@ -19,7 +18,6 @@ export const Footer = () => {
                     <img src='/logow.svg' height='50' />
                     <SocialIcons />
                 </Box>
-                <Typography sx={{ fontSize: '14px', textAlign: 'center' }}>Copyright © 2023 - Nicolás Gutiérrez</Typography>
             </Box>
 
         </Container>
